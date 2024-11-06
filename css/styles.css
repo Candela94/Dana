@@ -17,14 +17,18 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    gap: 16px;
+    gap: 24px;
     padding: 16px;
+    padding-bottom: 64px;
 
 }
 
 
 .header{
-    background-color: #f3f3f3;
+    background-color: #7c7cd8;
+    position: sticky;
+    top: 0;
+    color: #e7e6e6;
 }
 
 .nav__ul {
@@ -35,13 +39,32 @@
 }
 
 
+
+.encabezado{
+    padding-left:  8px;
+    padding-right: 8px;
+   
+    position: sticky;
+    top: 100px;
+    
+}
+
 .encabezado-nav__ul{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     font-size: 12px;
-    padding: 16px 24px;
+    padding-top: 20px;
+  
 
+}
+
+.encabezado-nav__ul li{
+    padding: 8px;
+    background-color: rgb(243, 250, 255);
+    
+    border-radius: 30px;
+    text-align: center;
 }
 
 
@@ -69,7 +92,8 @@
 .cta__boton {
     font-family: khula;
     padding: 8px;
-    background-color: #FFAC07;
+    background-color: #e7e6e6;
+    
     border: none;
     border-radius: 4px;
     position: absolute;
@@ -92,22 +116,53 @@
 }
 
 
+.cards__card1, .cards__card2, .cards__card3{
+    position: relative;
+}
+
 .card1__img, .card2__img, .card3__img {
     width: 100%;
     border-radius: 4px;
+    opacity: 60px;
+    
+   
 }
 
-.card1__button, .card2__button, .card3__button {
-    padding: 8px;
+.card1__button{
+    background-color: #7c7cd8;
+    color: #e7e6e6;
+}
+
+ .card1__button, .card2__button, .card3__button {
+    padding: 1em;
     border-radius: 4px;
     border: none;
     font-family: khula;
+    width: 100%;
+   
+   
    
 
 }
 
+.card__text{
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    color:#585858;
+    background-color: #e7e6e6;
+    opacity: 0.7;
+    width: 100%;
+}
 
-.card1__h2{
+
+.card1__h3, .card2__h3, .card3__h3{
+
+    bottom: 50px;
+    top:50px;
+    left: 50px;
+    right: 50px;
+   
 
 }
 
@@ -121,6 +176,8 @@
 .descripcion__img{
     width: 100%;
 }
+
+
 
 .descripcion__h3{
     text-align: center;
@@ -146,14 +203,57 @@
 }
 
 
-.form__input{
-
-    padding: 8px 16px;
-    border:none;
-    border-radius: 20px;
-    background-color: rgb(255, 245, 219);
+.form{
     display: flex;
     flex-direction: column;
-    gap: 8px
-    ;
+    gap: 8px;
+}
+
+.form__input{
+
+    padding:  16px;
+    border:none;
+    border-radius: 20px;
+    background-color: rgb(243, 250, 255);
+    
+}
+
+
+.asistencia__table{
+    margin: 8px;
+    border: #585858;
+}
+
+
+.form__label{
+    display: flex;
+    gap: 8px;
+}
+
+.form__img{
+    width: 32px;
+}
+
+
+.form__button{
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #7c7cd8;
+    color: #e7e6e6;
+    color: #f3f3f3;
+    border: none;
+    font-family: khula;
+}
+
+
+.button-navigation__ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    padding: 24px 0px;
+    background-color: #7c7cd8;
+    color: #e7e6e6;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
