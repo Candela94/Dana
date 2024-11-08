@@ -219,10 +219,8 @@
 }
 
 
-.asistencia__table{
-    margin: 8px;
-    border: #585858;
-}
+
+
 
 
 .form__label{
@@ -236,13 +234,14 @@
 
 
 .form__button{
-    padding: 8px;
+    padding: 1em;
     border-radius: 20px;
     background-color: #7c7cd8;
     color: #e7e6e6;
     color: #f3f3f3;
     border: none;
     font-family: khula;
+    
 }
 
 
