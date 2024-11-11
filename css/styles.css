@@ -4,7 +4,9 @@
     padding: 0;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 .body {
     background-color: #FFFEFB;
@@ -17,7 +19,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    gap: 24px;
+    gap: 32px;
     padding: 16px;
     padding-bottom: 64px;
 
@@ -29,6 +31,8 @@
     position: sticky;
     top: 0;
     color: #e7e6e6;
+    width: 100%;
+    align-items: center;
 }
 
 .nav__ul {
@@ -43,7 +47,6 @@
 .encabezado{
     padding-left:  8px;
     padding-right: 8px;
-   
     position: sticky;
     top: 100px;
     
@@ -52,22 +55,26 @@
 .encabezado-nav__ul{
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
+    text-decoration: none;
     font-size: 12px;
     padding-top: 20px;
-  
+    list-style: none;
+    
 
 }
 
 .encabezado-nav__ul li{
     padding: 8px;
     background-color: rgb(243, 250, 255);
-    
+    text-decoration: none;
     border-radius: 30px;
     text-align: center;
+   
 }
 
-
+.encabezado-nav a{
+  text-decoration: none;
+}
 
 
 
@@ -78,27 +85,42 @@
 
 .cta__imagen {
     width: 100%;
+    position: relative;
 
 }
 
-.cta__titulo {
-
+.cta__text-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    width: 70%;
+    gap: 4px;
     position: absolute;
-    top: 70px;
+    top: 30px;
+    left: 15%;
+    background-color: #585858;
+    border-radius: 4px;
+  
+}
+
+.cta__h2{
+
     padding: 0 24px;
+    color: #e7e6e6;
+    text-align: center;
 
 }
 
-.cta__boton {
+.cta__button {
+
     font-family: khula;
     padding: 8px;
-    background-color: #e7e6e6;
-    
+    background-color: #e5aa2a;
+    color: #e7e6e6;
     border: none;
     border-radius: 4px;
-    position: absolute;
-    bottom: 70px;
-    left: 25px;
+    
 
 }
 
@@ -118,6 +140,7 @@
 
 .cards__card1, .cards__card2, .cards__card3{
     position: relative;
+    width: 100%;
 }
 
 .card1__img, .card2__img, .card3__img {
@@ -148,7 +171,7 @@
 .card__text{
     text-align: center;
     position: absolute;
-    top: 50px;
+    top: 50%;
     color:#585858;
     background-color: #e7e6e6;
     opacity: 0.7;
@@ -166,6 +189,12 @@
 
 }
 
+
+.card1__img--new{
+  
+
+    
+}
 
 
 
@@ -192,21 +221,63 @@
 
 
 
+
+
+.leyenda{
+   
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(243, 250, 255);
+    padding: 16px 6px 16px 6px;
+    border-radius: 10px;
+}
+
+
+
+
+.asistencia__tabla{
+    width: 100%;
+}
+
+
+
+.mapa__mapa{
+    width: 100%;
+    
+}
+
+
 .asistencia{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 24px;
 }
 
-.asistencia__table{
+.asistencia__tabla{
     width: 100%;
 }
+
+.asistencia__tabla th tr{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 .form{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+}
+
+.form__p{
+    text-align: center;
+    color: #868080;
+    font-size: 12px;
+    
 }
 
 .form__input{
@@ -248,7 +319,7 @@
 .button-navigation__ul{
     list-style: none;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     padding: 24px 0px;
     background-color: #7c7cd8;
     color: #e7e6e6;
@@ -256,3 +327,32 @@
     bottom: 0;
     width: 100%;
 }
+
+
+
+
+
+.imagenes{
+    height: 30%;
+    display: grid;
+    gap: 8px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns:200px 200px;
+}
+
+
+
+.imagenes__img1{
+    grid-row-start: 1;
+    object-fit:cover;
+
+}
+
+.imagenes__img2{
+    grid-row-start: 2;
+    grid-row-end:3 ;
+}
+
+
+
+

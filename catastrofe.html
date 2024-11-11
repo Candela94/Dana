@@ -18,7 +18,7 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__a" href="./index.html">Logo</li>
+                <li class="nav__a" href="./index.html"><img src="./img/HelpUs.png" alt="Logo"></li>
                 <li class="nav__a" href="./index.html"><i class="fa fa-bars"></i></li>
             </ul>
         </nav>
@@ -33,9 +33,9 @@
             <nav class="encabezado__nav">
                 <ul class="encabezado-nav__ul">
 
-                    <li>Mapa</li>
-                    <li>Centros de asistencia</li>
-                    <li>Voluntariados</li>
+                    <li><a href="#seccion-mapa">Mapa</a></li>
+                    <li><a href="#seccion-asistencia">Centros de asistencia</a></li>
+                    <li><a href="#seccion-voluntariado">¿Quieres ayudar?</a></li>
                     <li>Donaciones </li>
 
                 </ul>
@@ -69,7 +69,7 @@
             </section>
 
 
-            <section class="mapa">
+            <section class="mapa" id="seccion-mapa">
                 <nav class="mapa__nav">
 
                 </nav>
@@ -79,12 +79,30 @@
 
 
 
-            <section class="asistencia">
+            <section class="asistencia" id="seccion-asistencia">
                 <h3 class="asistencia__h3">Estos son los centros de asistencia más necesitados</h3>
 
-                <table class="asistencia__table">
+                <div class="leyenda">
+
+                    <img src="./img/agua.png" alt="agua" class="leyenda__icono-agua"> Agua
+
+                    <img src="./img/milk.png" alt="leche" class="leyenda__icono-leche">Leche
+
+                    <img src="./img/comida.png" alt="comida" class="leyenda__icono-comida">Comida
+                    <img class="leyenda__icono-mascotas" src="./img/material-symbols_pets.png" alt="mascotas">Comida
+                    <img class="leyenda__icono-panales" src="./img/panales.png" alt="panales">Pañales
+                    <img src="./img/comida-bebe.png" alt="bebe" class="leyenda__icono-bebe"> Comida para bebe
+                    <img src="./img/limpieza.png" alt="limpieza" class="leyenda__icono-limpieza">Productos de limpieza
+                    <img src="./img/higiene.png" alt="higiene" class="leyenda__icono-higiene">Higiene personal
+
+
+
+
+                </div>
+                <table class="asistencia__tabla">
                     <thead>
                         <tr>
+
 
 
                             <th><i class="fa fa-map-marker"></i>Ubicación</th>
@@ -96,82 +114,122 @@
                         <tr>
                             <th>Ikea, Alfafar</th>
 
-                            <th>Agua, leche, productos de limpieza</th>
+                            <th><img src="./img/agua.png" alt="agua">, <img src="./img/milk.png" alt="leche">, <img
+                                    src="./img/limpieza.png" alt=""></th>
                         </tr>
 
 
                         <tr>
                             <th>c/Cruz, Paiporta</th>
 
-                            <th>Comida para bebés, pañales, comida para mascotas</th>
+                            <th>
+                                <img src="./img/comida-bebe.png" alt="bebe">, <img src="./img/panales.png"
+                                    alt="panales">, <img src="./img/material-symbols_pets.png" alt="">, <img
+                                    src="./img/comida.png" alt="">
+                            </th>
                         </tr>
 
 
                         <tr>
                             <th>c/Torre, Catarroja</th>
 
-                            <th>Agua, leche para bebés, huevos, conservas</th>
+                            <th>
+                                <img src="./img/limpieza.png" alt="limpieza">/ <img src="./img/comida.png"
+                                    alt="comida">/ <img src="./img/medicamentos.png" alt="">
+                            </th>
                         </tr>
 
 
                         <tr>
                             <th>c/Sud, Algemesí</th>
 
-                            <th>Medicamentos, agua, comida, productos de higiene personal </th>
+                            <th><img src="./img/higiene.png" alt="higiene">, <img src="./img/comida.png" alt="comida">,
+                                <img src="./img/comida-bebe.png" alt="">
+                            </th>
                         </tr>
                     </tbody>
 
                 </table>
+            </section>
 
 
+
+
+            <section class="mapa">
+
+                <div class="mapa__titulo">
+                   <h3 class="mapa__h3">Título</h3>
+                   <div class="mapa__filtro">
+
+                   </div>
+                </div>
+
+                <div class="mapa__mapa" style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=paiporta+(Dana)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                            href="https://www.gps.ie/">gps devices</a></iframe></div>
 
             </section>
 
-            <form action="" class="form">
-                <h3 class="form__h3">¿Te gustaría ayudar de alguna manera?</h3>
-                <img class="form__img" src="./img/colabora.png" alt="colabora">
-                <input class="form__input" type="text" name="name" placeholder="Nombre y apellidos">
-                <input class="form__input" type="number" name="phone" placeholder="Teléfono">
-                Elige entre las siguientes opciones
+            <section id="seccion-voluntariado">
+                <form action="" class="form">
+                    <h3 class="form__h3">Si puedes ayudarnos de otra manera, escríbenos y te decimos cómo</h3>
+                    <img class="form__img" src="./img/colabora.png" alt="colabora">
+                    <p class="form__p">Rellena este formulario y te meteremos en un grupo de whatsapp donde tendrás toda
+                        la información sobre dónde y cómo poder ayudar</p>
+                    <input class="form__input" type="text" name="name" placeholder="Nombre y apellidos">
+                    <input class="form__input" type="number" name="phone" placeholder="Teléfono">
+                    Elige entre las siguientes opciones
 
 
 
-                <label class="form__label" for="option1"><input id="option1" name="option1" type="checkbox">Donar
-                    comida y otros productos</label>
+                    <label class="form__label" for="option1"><input id="option1" name="option1" type="checkbox">Soy
+                        enfermerx y me gustaría ayudar en centros sanitarios</label>
 
-                <label class="form__label" for="option2"><input id="option2" name="option2" type="checkbox">Donar
-                    productos para animales</label>
-                <label class="form__label" for="option3"> <input id="option3" name="option3" type="checkbox">Donar
-                    ropa</label>
-                <label class="form__label" for="option4"> <input id="option4" name="option4" type="checkbox">Organizar
-                    productos en centros de asistencia</label>
+                    <label class="form__label" for="option2"><input id="option2" name="option2" type="checkbox">Soy
+                        veterinarix y quiero ayudar en hospitales campaña para animales </label>
+                    <label class="form__label" for="option3"> <input id="option3" name="option3" type="checkbox">Tengo
+                        mobiliario que me gustaría donar</label>
+                    <label class="form__label" for="option4"> <input id="option4" name="option4"
+                            type="checkbox">Organizar
+                        productos en centros de asistencia</label>
 
-                <label class="form__label" for="option5"> <input id="option4" name="option5" type="checkbox">Tengo
-                    vehiculo para distribuir</label>
-                <label class="form__label" for="option6"> <input id="option4" name="option6" type="checkbox">Quiero distribuir comida en los puntos más afectados</label>
+                    <label class="form__label" for="option5"> <input id="option5" name="option5" type="checkbox">Tengo
+                        vehiculo para distribuir</label>
+                    <label class="form__label" for="option6"> <input id="option6" name="option6" type="checkbox">Quiero
+                        distribuir comida en los puntos más afectados</label>
 
-                <input class="form__button" type="submit" value="Enviar">
+                    <input class="form__button" type="submit" value="Enviar">
 
-            </form>
+                </form>
+
+            </section>
+
+            <div class="imagenes">
+
+                <img class="imagenes__img1 imagen1" src="./img/animo.jpg" alt="mensaje">
+                <img class="imagenes__img2 imagen2" src="./img/pueblo.jpg" alt="pueblo">
+                <img class="imagenes__img3 imagen3" src="./img/Salida de Picanya a Patraix 2.jpg" alt="ayuda">
+                <!-- <img  class= "imagenes__img4 imagen4"src="" alt="" > -->
+
+            </div>
 
         </main>
 
 
-        <!-- <nav class="button-navigation">
-                <ul class="button-navigation__ul">
-                    <li><i class="fa fa-home"></i></li>
-                    <li><i class="fa fa-search"></i></li>
-                    <li><i class="fa fa-bell-o"></i></li>
-                    <li><i class="fa fa-user-o"></i></li>
-                </ul>
-            </nav> -->
+        <nav class="button-navigation">
+            <ul class="button-navigation__ul">
+                <li><i class="fa fa-home"></i></li>
+                <li><i class="fa fa-search"></i></li>
+                <li><i class="fa fa-bell-o"></i></li>
+                <li><i class="fa fa-user-o"></i></li>
+            </ul>
+        </nav>
 
-        </header>
 
 
         <!-- <img alt="Pintada en una pared en una casa cubierta de barro en Massanassa, este domingo." decoding="auto" class="_re  a_m-h" height="277" srcset="https://imagenes.elpais.com/resizer/v2/NNSDG3B52FANBD55IFRO2NQXUY.JPG?auth=45e6c0c59b1a5c1bc627b5f676c96d6d071c85227119253d30c963e44152a4cf&amp;width=414 414w,https://imagenes.elpais.com/resizer/v2/NNSDG3B52FANBD55IFRO2NQXUY.JPG?auth=45e6c0c59b1a5c1bc627b5f676c96d6d071c85227119253d30c963e44152a4cf&amp;width=828 640w,https://imagenes.elpais.com/resizer/v2/NNSDG3B52FANBD55IFRO2NQXUY.JPG?auth=45e6c0c59b1a5c1bc627b5f676c96d6d071c85227119253d30c963e44152a4cf&amp;width=980 1000w,https://imagenes.elpais.com/resizer/v2/NNSDG3B52FANBD55IFRO2NQXUY.JPG?auth=45e6c0c59b1a5c1bc627b5f676c96d6d071c85227119253d30c963e44152a4cf&amp;width=1200 1200w" width="414" sizes="(min-width:1199px) 1155px,(min-width:1001px) calc(100vw - 44px),(min-width:768px) 767px, 100vw" src="https://imagenes.elpais.com/resizer/v2/NNSDG3B52FANBD55IFRO2NQXUY.JPG?auth=45e6c0c59b1a5c1bc627b5f676c96d6d071c85227119253d30c963e44152a4cf&amp;width=414" loading="eager"> -->
 
-    </main>
 
 
 
