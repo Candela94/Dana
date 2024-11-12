@@ -11,7 +11,9 @@ html{
 .body {
     background-color: #FFFEFB;
     color: #585858;
-    font-family: khula, poppins;
+    font-family: poppins;
+    width: 100%;
+    font-size: 14px;
 }
 
 .main {
@@ -44,16 +46,32 @@ html{
 }
 
 
+.header1 {
 
-.encabezado{
-    padding-left:  8px;
-    padding-right: 8px;
+    padding: 16px;
+}
+
+.header1__ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
     position: sticky;
-    top: 100px;
+    z-index: 1;
+}
+
+
+.header__ul a{
+    text-decoration: none;
+}
+
+
+
+/* .encabezado{
+   
     
 }
 
-.encabezado-nav__ul{
+.encabezado__ul{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -75,7 +93,7 @@ html{
 
 .encabezado-nav a{
   text-decoration: none;
-}
+} */
 
 
 
@@ -221,20 +239,22 @@ html{
 }
 
 
+.descripcion__p{
+    text-align: center;
+}
 
 
 
-
-
-.leyenda{
+.asistencia__leyenda{
    
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(243, 250, 255);
     padding: 16px 6px 16px 6px;
     border-radius: 10px;
+    font-size: 12px;
 }
 
 
@@ -319,18 +339,34 @@ html{
 }
 
 
-.button-navigation__ul{
-    list-style: none;
-    display: flex;
-    justify-content:space-between;
-    padding: 24px 0px;
-    background-color: #7c7cd8;
-    color: #e7e6e6;
+
+.button-navigation{
+  
+    bottom: 0;
     position: fixed;
     bottom: 0;
+    padding: 16px 0px;
+    background-color: #7c7cd8;
+    color: #e7e6e6;
     width: 100%;
+    display: flex;
+  
+    
+   
+   
+
 }
 
+.button-navigation__ul{
+    display: flex;
+    list-style: none;
+    background-color: #7c7cd8;
+  
+   
+
+ 
+   
+}
 
 
 
